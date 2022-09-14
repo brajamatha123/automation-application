@@ -3,8 +3,9 @@ pipeline {
 
     stages {
         stage('checkout') {
-            sh"
             steps {
+                sh"
+                yum install git clone
                 git clone git@github.com:brajamatha123/automation-application.git
                 "
             }
